@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    scrollbar-color: grey whitesmoke;
+  	scrollbar-width: thin;
+}
+
+body{
+    margin: 20%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+/*  background-color: #dcd7d1; */
+/*	background-color: #eaeaea; */
+	background-color: whitesmoke;
+    font-family: verdana; 
+	color: #0e0d09;
+	border-style: solid;
+	border-color: darkgrey;
+	border-width: 0px;
+}
+
+header{
+	text-align: right;
+	padding: 10px;
+	font-size: 36px; 
+	text-transform: uppercase; 
+	border-style: solid;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+
+iframe{
+	border-style: none;
+	width: 100%;
+}
+
+.navbar{
+	display: block;
+	clear: both;
+	text-align: center;
+	padding: 25px;
+	outline-style: solid;
+	outline-color: whitesmoke;
+	outline-width: 7px;
+	outline-offset: -1px;
+/*	-moz-box-shadow:0 5px 6px rgba(182, 182, 182, 0.75);
+	-webkit-box-shadow: 0 6px 5px rgba(182, 182, 182, 0.75); */
+	box-shadow: 0 8px 5px gray;
+}
+
+aside{
+	width: 20%;
+	float: left;
+	padding: 10px;
+	text-align: left;
+	color: #757575;
+}
+
+section{
+	width: 80%;
+	float: left;
+	padding: 10px;
+	text-align: justify;
+	height: 100%;
+}
+
+article{
+	width: 20%;
+	float: left;
+	padding: 10px;
+	text-align: justify;
+}
+
+footer{
+	background-color: #efefef;
+	display: block;
+	clear: both;
+	text-align: center;
+	padding: 25px;
+	box-shadow: 0 0 5px grey inset;
+}
+
+button{	
+	background-color: whitesmoke;
+	padding: 10px 20px 10px 20px;
+	border-style: solid;
+	border-color: whitesmoke;
+	border-top-width: 2px;
+	border-left-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #84681c;
+	text-shadow: -1px 1px 1px lightgrey;
+	box-shadow: 0 0 5px grey, 0 0 1px darkgrey;
+	transition-duration: 0.5s;
+}
+button:hover{	
+	background-color: floralwhite;
+	border-color: floralwhite;
+	box-shadow: 0 0 5px grey, 0 0 1px darkgrey;
+	color: #a58123;
+}
+
+button:active{	
+	background-color: papayawhip;
+	border-color: papayawhip;
+	box-shadow: 0 0 5px grey, 0 0 1px darkgrey;
+	color: #a58123;
+}
+
+button:focus{	
+	background-color: papayawhip;
+	border-color: papayawhip;
+	box-shadow: 0 0 5px grey, 0 0 1px darkgrey;
+	color: #83661c;
+}
+
+li{
+
+}
+
+li::marker {
+  	color: red;
+	font-size: 28px;
+}
+
+@media screen and (max-width:600px){
+    body{
+    margin: 5%;
+    }
+    aside, section, article{
+    width: 100%;}
+    iframe{
+	width: 100%;
+	max-height: 100%;
+	}
+    button{	
+	padding: 3px 8px 5px 8px;
+	font-weight: normal;
+	text-transform: lowercase;}
+    }
