@@ -128,6 +128,38 @@ li::marker {
 	font-size: 28px;
 }
 
+@media screen and (max-width:950px){
+    button{	
+	padding: 4px 8px 6px 8px;
+	font-weight: bold;
+	text-transform: uppercase;}
+    }
+
+@media screen and (max-width:830px){
+    button{	
+	padding: 3px 8px 5px 8px;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;}
+    }
+
+@media screen and (max-width:720px){
+    body{
+    margin: 7%;
+    }
+    aside, section, article{
+    width: 100%;}
+    iframe{
+	width: 100%;
+	max-height: 100%;
+	}
+    button{	
+	padding: 3px 8px 5px 8px;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;}
+    }
+
 @media screen and (max-width:600px){
     body{
     margin: 5%;
@@ -140,6 +172,7 @@ li::marker {
 	}
     button{	
 	padding: 3px 8px 5px 8px;
-	font-weight: normal;
-	text-transform: lowercase;}
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;}
     }
