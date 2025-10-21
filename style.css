@@ -6,7 +6,7 @@
 
 body{
     margin: 20%;
-    margin-top: 4%;
+    margin-top: 25px;
     margin-bottom: 4%;
 /*  background-color: #dcd7d1; */
 /*	background-color: #eaeaea; */
@@ -128,17 +128,30 @@ li::marker {
 	font-size: 28px;
 }
 
+@media screen and (max-width:1250px){
+    body{
+    margin: 10%;
+    margin-top: 25px;
+    }    
+
 @media screen and (max-width:950px){
+    body{
+    margin: 3%;
+    margin-top: 25px;
+    }    
     button{	
-	padding: 4px 8px 6px 8px;
+	padding: 5px 8px 6px 8px;
 	font-weight: bold;
 	text-transform: uppercase;}
     }
 
-@media screen and (max-width:830px){
+@media screen and (max-width:850px){
+    body{
+    margin: 1%;
+    margin-top: 25px;
+    }
     button{	
-	padding: 3px 8px 5px 8px;
-	font-size: 11px;
+	padding: 5px 8px 6px 8px;
 	font-weight: bold;
 	text-transform: uppercase;}
     }
@@ -146,6 +159,7 @@ li::marker {
 @media screen and (max-width:720px){
     body{
     margin: 7%;
+    margin-top: 25px;
     }
     aside, section, article{
     width: 100%;}
@@ -154,7 +168,7 @@ li::marker {
 	max-height: 100%;
 	}
     button{	
-	padding: 3px 8px 5px 8px;
+	padding: 4px 8px 5px 8px;
 	font-size: 11px;
 	font-weight: bold;
 	text-transform: uppercase;}
@@ -163,6 +177,7 @@ li::marker {
 @media screen and (max-width:600px){
     body{
     margin: 5%;
+    margin-top: 25px;
     }
     aside, section, article{
     width: 100%;}
@@ -171,8 +186,8 @@ li::marker {
 	max-height: 100%;
 	}
     button{	
-	padding: 3px 8px 5px 8px;
-	font-size: 11px;
+	padding: 4px 8px 5px 8px;
+	font-size: 10px;
 	font-weight: bold;
 	text-transform: uppercase;}
     }
