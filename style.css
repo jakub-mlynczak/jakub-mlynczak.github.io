@@ -197,7 +197,7 @@ li::marker {
 	text-transform: uppercase;}
     }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:650px){
     body{
     margin: 5%;
     margin-top: 25px;
@@ -225,6 +225,37 @@ li::marker {
     button{	
 	padding: 8px 8px 7px 8px;
 	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;}
+    }
+@media screen and (max-width:400px){
+    body{
+    margin: 5%;
+    margin-top: 25px;
+    }
+    aside, section, article{
+    width: 100%;}
+    .asideimg{
+	padding-left: 9%;
+    }
+	#navbuttonright{
+	padding-left: 1%;
+  	width: 25%;
+	}
+	#navbuttoncenter{
+  	width: 2%;"
+	}
+	#navbuttonleft{
+	padding-right: 1%;
+  	width: 25%;
+	}
+    iframe{
+	width: 100%;
+	max-height: 100%;
+	}
+    button{	
+	padding: 6px 6px 5px 6px;
+	font-size: 9px;
 	font-weight: bold;
 	text-transform: uppercase;}
     }
