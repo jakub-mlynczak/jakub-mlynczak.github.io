@@ -1,6 +1,8 @@
+@import url('dark.css');
+
 *{
     box-sizing: border-box;
-    scrollbar-color: grey whitesmoke;
+    scrollbar-color: lightgrey #efefef;
   	scrollbar-width: thin;
 }
 
@@ -10,7 +12,7 @@ body{
     margin-bottom: 4%;
 /*  background-color: #dcd7d1; */
 /*	background-color: #eaeaea; */
-	background-color: whitesmoke;
+	background-color: lightgrey;
     font-family: verdana; 
 	color: #0e0d09;
 	border-style: solid;
@@ -19,6 +21,7 @@ body{
 }
 
 header{
+	background-color: lightgrey;
 	text-align: right;
 	padding: 10px;
 	font-size: 36px; 
@@ -54,18 +57,22 @@ iframe{
 	width: 100%;
 }
 
-.navbar{
+#navbar{
 	display: block;
 	clear: both;
 	text-align: center;
 	padding: 25px;
 	outline-style: solid;
-	outline-color: whitesmoke;
+	outline-color: lightgrey;
 	outline-width: 7px;
 	outline-offset: -1px;
 /*	-moz-box-shadow:0 5px 6px rgba(182, 182, 182, 0.75);
 	-webkit-box-shadow: 0 6px 5px rgba(182, 182, 182, 0.75); */
 	box-shadow: 0 8px 5px gray;
+	overflow: hidden;
+  	background-color: lightgrey;
+  	position: sticky;
+  	top: 0;
 }
 
 aside{
@@ -77,11 +84,13 @@ aside{
 }
 
 section{
-	width: 80%;
+	background-color: #efefef;
+	width: 78%;
 	float: left;
 	padding: 10px;
 	text-align: justify;
 	height: 100%;
+	box-shadow: 0 0 5px grey inset;
 }
 
 article{
@@ -92,6 +101,8 @@ article{
 }
 
 footer{
+	clear: both;
+	margin-top: 25px;
 	background-color: #efefef;
 	display: block;
 	clear: both;
@@ -104,7 +115,10 @@ button{
 	background-color: whitesmoke;
 	padding: 10px 20px 9px 20px;
 	border-style: solid;
-	border-color: whitesmoke;
+	border-top-color: snow;
+	border-left-color: whitesmoke;
+	border-right-color: whitesmoke;
+	border-bottom-color: whitesmoke;
 	border-top-width: 2px;
 	border-left-width: 2px;
 	border-right-width: 2px;
@@ -134,9 +148,18 @@ button:active{
 button:focus{	
 	background-color: papayawhip;
 	border-color: papayawhip;
+	text-shadow: -1px 1px 1px white; 
 	box-shadow: 0 0 5px grey, 0 0 1px darkgrey;
 	color: #83661c;
 }
+
+/*button:focus{	
+	background-color: gainsboro;
+	border-color: gainsboro;
+	text-shadow: -1px 1px 1px white; 
+	box-shadow: 0 0 5px grey, 0 0 1px darkgrey;
+	color: lightslategray;
+}*//*use this if you want inset button*/
 
 li{
 
@@ -168,10 +191,19 @@ li::marker {
 @media screen and (max-width:800px){
     body{
     margin: 7%;
-    margin-top: 25px;
+    margin-top: 65px;
+    }
+    header{
+    margin-bottom: -45px;
     }
     aside, section, article{
     width: 100%;}
+    #navbar{
+  	overflow: hidden;
+  	position: fixed;
+  	top: 0;
+  	width: 86%;
+    }
     .asideimg{
 	padding-left: 10%;
     }
@@ -191,7 +223,7 @@ li::marker {
 	max-height: 100%;
 	}
     button{	
-	padding: 8px 8px 7px 8px;
+	padding: 9px 9px 8px 9px;
 	font-size: 11px;
 	font-weight: bold;
 	text-transform: uppercase;}
@@ -199,11 +231,20 @@ li::marker {
 
 @media screen and (max-width:650px){
     body{
-    margin: 5%;
-    margin-top: 25px;
+    margin: 7%;
+    margin-top: 65px;
+    }
+    header{
+    margin-bottom: -45px;
     }
     aside, section, article{
     width: 100%;}
+    #navbar{
+  	overflow: hidden;
+  	position: fixed;
+  	top: 0;
+  	width: 86%;
+    }
     .asideimg{
 	padding-left: 9%;
     }
@@ -231,10 +272,19 @@ li::marker {
 @media screen and (max-width:400px){
     body{
     margin: 5%;
-    margin-top: 25px;
+    margin-top: 65px;
+    }
+    header{
+    margin-bottom: -45px;
     }
     aside, section, article{
     width: 100%;}
+    #navbar{
+  	overflow: hidden;
+  	position: fixed;
+  	top: 0;
+  	width: 86%;
+    }
     .asideimg{
 	padding-left: 9%;
     }

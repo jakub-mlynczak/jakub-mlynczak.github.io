@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="lightgrey">
 	<title>Jakub Młyńczak</title>
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -13,11 +14,9 @@
 		<h2>Jakub Filip Młyńczak</h2>
 	</header>
 
-	<nav class="navbar">
+	<nav id="navbar">
 		<table  style="
   			border-collapse: collapse;
-  			
-  			
   			width: 100%;
   			border: 0px solid #ddd;
 			">
@@ -69,7 +68,7 @@
 		</section>
 		<br>
 	</main>
-	
+	<div style="clear: both;"></div>
 	<footer>
 		<table  style="
   			border-collapse: collapse;
@@ -141,10 +140,18 @@
 					text-align: center;
   					width: 25%;
   					border: 0px solid lightgray;">
-					<button>Nieaktywny</button>
+					<button onclick="darkmode()">tryb ciemny</button>
 				</td>
 			</tr>
 		</table>
 	</footer>
+
+<script>
+function darkmode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
 </body>
 </html>
