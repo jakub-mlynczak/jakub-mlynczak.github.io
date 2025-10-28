@@ -5,15 +5,16 @@
 }
 
 body{
+	background-color: #efefef;
     margin: 5%;
 /*  background-color: #dcd7d1; */
 /*	background-color: #eaeaea; */
-	background-color: #efefef;
     font-family: verdana; 
 	color: #0e0d09;
 }
 
 section{
+	background-color: #efefef;
 	width: 90%;
 	float: left;
 	text-align: justify;
