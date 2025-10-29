@@ -35,7 +35,7 @@ header{
 
 .navbutton{
 	text-align: center;
-	border: 0px solid lightgray;
+	border: 2px solid lightgray;
 }
 
 #navbuttonright{
@@ -83,6 +83,10 @@ aside{
 	color: #757575;
 }
 
+#asideimg{
+	border-radius: 7%;
+}
+
 section{
 	background-color: #efefef;
 	width: 78%;
@@ -115,7 +119,7 @@ button{
 	background-color: whitesmoke;
 	padding: 10px 20px 9px 20px;
 	border-style: solid;
-	border-top-color: snow;
+	border-top-color: whitesmoke;
 	border-left-color: whitesmoke;
 	border-right-color: whitesmoke;
 	border-bottom-color: whitesmoke;
@@ -127,7 +131,7 @@ button{
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #84681c;
-	text-shadow: -1px 1px 1px lightgrey;
+	text-shadow: -1px 1px 1px white;
 	box-shadow: 0 0 5px grey, 0 0 1px darkgrey;
 	transition-duration: 0.5s;
 }
@@ -166,7 +170,7 @@ li{
 }
 
 li::marker {
-  	color: red;
+  	color: grey;
 	font-size: 28px;
 }
 
@@ -204,8 +208,9 @@ li::marker {
   	top: 0;
   	width: 86%;
     }
-    .asideimg{
+    #asideimg{
 	padding-left: 10%;
+	border-radius: 0px;
     }
     #navbuttonright{
 	padding-left: 1%;
@@ -245,8 +250,9 @@ li::marker {
   	top: 0;
   	width: 86%;
     }
-    .asideimg{
+    #asideimg{
 	padding-left: 9%;
+	border-radius: 0px;
     }
 	#navbuttonright{
 	padding-left: 1%;
@@ -285,8 +291,9 @@ li::marker {
   	top: 0;
   	width: 90%;
     }
-    .asideimg{
+    #asideimg{
 	padding-left: 9%;
+	border-radius: 0px;
     }
 	#navbuttonright{
 	padding-left: 1%;
