@@ -30,7 +30,8 @@
 }
 
 .dark-mode footer{
-	background-color: #efefef;
+	background-color: darkgrey;
+	color: lightgrey;
 	box-shadow: 0 0 5px grey inset;
 }
 
