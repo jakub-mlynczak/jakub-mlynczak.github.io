@@ -1,3 +1,7 @@
+:root {
+	color-scheme: light dark;
+}
+
 *{
     box-sizing: border-box;
     scrollbar-color: lightgrey #efefef;
@@ -5,23 +9,46 @@
 }
 
 body{
-	background-color: #efefef;
+	background-color: light-dark(#efefef, grey);
+  	color: light-dark(#0e0d09, lightgrey);
     margin: 5%;
 /*  background-color: #dcd7d1; */
 /*	background-color: #eaeaea; */
     font-family: verdana; 
-	color: #0e0d09;
+}
+
+header{
+	background-color: light-dark(#efefef, grey);
+  	color: light-dark(#0e0d09, lightgrey);
 }
 
 section{
-	background-color: #efefef;
+	background-color: light-dark(#efefef, grey);
+  	color: light-dark(#0e0d09, lightgrey);
 	width: 90%;
 	float: left;
 	text-align: justify;
 }
 
+h1{
+	color: light-dark(black, white);
+}
+h2{
+	color: light-dark(black, white);
+}
+h3{
+	color: light-dark(black, white);
+}
+h4{
+	color: light-dark(black, white);
+}
+h5{
+	color: light-dark(black, white);
+}
+
 input{	
-	background-color: #f4bf33;
+	background-color: light-dark(#efefef, grey);
+  	color: light-dark(#0e0d09, lightgrey);
 	padding: 10px 20px 12px 20px;
 	border-style: solid;
 	border-color: #dab45b;
@@ -42,3 +69,13 @@ input{
 	font-weight: normal;
 	text-transform: lowercase;}
     }
+
+.dark-mode body{
+	background-color: grey;
+	color: lightgrey;
+}
+
+.dark-mode section{
+		background-color: grey;
+	color: lightgrey;
+}

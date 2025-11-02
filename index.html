@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" data-theme="light">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#d3d3d3">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="theme-color" content="#d3d3d3">
 	<title>Jakub Młyńczak</title>
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -84,7 +84,7 @@
 					text-align: center;
   					width: 25%;
   					border: 0px solid lightgray;">
-					<button onclick="darkmode()">tryb ciemny</button>
+					<button  id="darkmode-toggle" role="button" aria-pressed="false" onclick="darkmode()">tryb ciemny</button>
 				</td>
 			</tr>
 		</table>
@@ -92,10 +92,28 @@
 	</footer>
 
 <script>
-function darkmode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
+const htmlRoot = document.querySelector("html");
+const toggleButton = document.getElementById("darkmode-toggle");
+
+// Funkcja przełączająca tryb
+function toggleDarkMode() {
+  const isPressed = toggleButton.getAttribute("aria-pressed") === "true";
+
+  if (isPressed) {
+    // Wyłącz tryb ciemny
+    htmlRoot.style.colorScheme = "light";
+    toggleButton.setAttribute("aria-pressed", "false");
+    toggleButton.textContent = "Tryb ciemny";
+  } else {
+    // Włącz tryb ciemny
+    htmlRoot.style.colorScheme = "dark";
+    toggleButton.setAttribute("aria-pressed", "true");
+    toggleButton.textContent = "Tryb jasny";
+  }
 }
+
+// Nasłuchiwanie kliknięcia
+toggleButton.addEventListener("click", toggleDarkMode);
 </script>
 
 </body>

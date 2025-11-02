@@ -1,4 +1,10 @@
-@import url('dark.css');
+:root {
+	color-scheme: light dark;
+}
+
+html {
+  color-scheme: light dark;
+}
 
 *{
     box-sizing: border-box;
@@ -7,21 +13,21 @@
 }
 
 body{
+  	background-color: light-dark(lightgrey, #4f4f51);
+  	color: light-dark(#0e0d09, grey);
     margin: 20%;
     margin-top: 25px;
     margin-bottom: 4%;
 /*  background-color: #dcd7d1; */
 /*	background-color: #eaeaea; */
-	background-color: lightgrey;
     font-family: verdana; 
-	color: #0e0d09;
 	border-style: solid;
-	border-color: darkgrey;
+	border-color: light-dark(darkgrey, #4f4f51);darkgrey;
 	border-width: 0px;
 }
 
 header{
-	background-color: lightgrey;
+  	background-color: light-dark(lightgrey, #4f4f51);
 	text-align: right;
 	padding: 10px;
 	font-size: 36px; 
@@ -35,7 +41,7 @@ header{
 
 .navbutton{
 	text-align: center;
-	border: 2px solid lightgray;
+	border: 2px solid transparent;
 }
 
 #navbuttonright{
@@ -58,21 +64,22 @@ iframe{
 }
 
 #navbar{
+  	background-color: light-dark(lightgrey, #4f4f51);
 	display: block;
 	clear: both;
 	text-align: center;
 	padding: 25px;
 	outline-style: solid;
-	outline-color: lightgrey;
+	outline-color: light-dark(lightgrey, #4f4f51);
 	outline-width: 7px;
 	outline-offset: -1px;
 /*	-moz-box-shadow:0 5px 6px rgba(182, 182, 182, 0.75);
 	-webkit-box-shadow: 0 6px 5px rgba(182, 182, 182, 0.75); */
-	box-shadow: 0 8px 5px gray;
+	box-shadow: 0 8px 5px light-dark(gray, darkcyan);
 	overflow: hidden;
-  	background-color: lightgrey;
   	position: sticky;
   	top: 0;
+  	z-index: 999;
 }
 
 aside{
@@ -88,13 +95,13 @@ aside{
 }
 
 section{
-	background-color: #efefef;
+  	background-color: light-dark(#efefef, grey);
 	width: 78%;
 	float: left;
 	padding: 10px;
 	text-align: justify;
 	height: 100%;
-	box-shadow: 0 0 5px grey inset;
+	box-shadow: 0 0 5px light-dark(grey, black) inset;
 }
 
 article{
@@ -105,24 +112,23 @@ article{
 }
 
 footer{
+  	background-color: light-dark(#efefef, grey);
+  	  	color: light-dark(#0e0d09, lightgrey);
 	clear: both;
 	margin-top: 25px;
-	background-color: #efefef;
 	display: block;
 	clear: both;
 	text-align: center;
 	padding: 25px;
-	box-shadow: 0 0 5px grey inset;
+	box-shadow: 0 0 5px light-dark(grey, black) inset;
 }
 
 button{	
-	background-color: whitesmoke;
+  	background-color: light-dark(whitesmoke, #939596);
+  	color: light-dark(#84681c, #2d3032);
 	padding: 10px 20px 9px 20px;
 	border-style: solid;
-	border-top-color: whitesmoke;
-	border-left-color: whitesmoke;
-	border-right-color: whitesmoke;
-	border-bottom-color: whitesmoke;
+	border-color: light-dark(whitesmoke, #939596);
 	border-top-width: 2px;
 	border-left-width: 2px;
 	border-right-width: 2px;
@@ -130,30 +136,29 @@ button{
 	border-radius: 4px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #84681c;
-	text-shadow: -1px 1px 1px white;
-	box-shadow: 0 0 5px grey, 0 0 1px darkgrey;
+	text-shadow: -1px 1px 1px light-dark(white, lightgrey);
+	box-shadow: 0 0 5px light-dark(grey, lightgrey), 0 0 1px light-dark(darkgrey, white);
 	transition-duration: 0.5s;
 }
 button:hover{	
-	background-color: floralwhite;
-	border-color: floralwhite;
-	box-shadow: 0 0 5px grey, 0 0 1px darkgrey;
-	color: #a58123;
+	background-color: light-dark(floralwhite, #7d7285);
+	border-color: light-dark(floralwhite, #7d7285);
+	box-shadow: 0 0 5px light-dark(grey, plum) 0 0 1px light-dark(darkgrey, mediumorchid);
+	color: light-dark(#a58123, #2d3032);
 }
 
 button:active{	
-	background-color: papayawhip;
-	border-color: papayawhip;
-	box-shadow: 0 0 5px grey, 0 0 1px darkgrey;
+	background-color: light-dark(papayawhip, orchid);
+	border-color: light-dark(papayawhip, orchid);
+	box-shadow: 0 0 5px light-dark(grey, plum) 0 0 1px light-dark(darkgrey, mediumorchid);
 	color: #a58123;
 }
 
 button:focus{	
-	background-color: papayawhip;
-	border-color: papayawhip;
+	background-color: light-dark(papayawhip, orchid);
+	border-color: light-dark(papayawhip, orchid);
 	text-shadow: -1px 1px 1px white; 
-	box-shadow: 0 0 5px grey, 0 0 1px darkgrey;
+	box-shadow: 0 0 5px light-dark(grey, plum) 0 0 1px light-dark(darkgrey, mediumorchid);
 	color: #83661c;
 }
 
